@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import './mediaqueries.css';
-
+import profile from '../assets/profilepic.jpg'
 function App() {
   const toggleMenu = () => {
     const menuLinks = document.querySelector('.menu-links');
@@ -45,7 +45,7 @@ function App() {
 
       <section id="profile">
         <div className="section__pic-container float">
-          <img src="./assets/profilepic.jpg"   className='rounded-[50%]' alt="Ajith Balan profile picture" />
+          <img src={profile}   className='rounded-[50%]' alt="Ajith Balan profile picture" />
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
