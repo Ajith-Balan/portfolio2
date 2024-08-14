@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import './mediaqueries.css';
-import profile from '../assets/profilepic.jpg'
 import instagram from '../assets/instagram.webp'
 
 
@@ -49,11 +48,11 @@ function App() {
 
       <section id="profile">
         <div className="section__pic-container float">
-<<<<<<< HEAD
+
           <img src={"../assets/profilepic.jpg" }  className='rounded-[50%]' alt="Ajith Balan profile picture" />
-=======
-          <img src={profile}   className='rounded-[50%]' alt="Ajith Balan profile picture" />
->>>>>>> d67ff1184ae80eab0d6016fa5ada0337efe938ad
+
+         
+
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
