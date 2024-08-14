@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
 import './mediaqueries.css';
+import profile from '../assets/profilepic.jpg'
+import instagram from '../assets/instagram.webp'
+
+
 
 function App() {
   const toggleMenu = () => {
@@ -45,7 +49,11 @@ function App() {
 
       <section id="profile">
         <div className="section__pic-container float">
+<<<<<<< HEAD
           <img src={"../assets/profilepic.jpg" }  className='rounded-[50%]' alt="Ajith Balan profile picture" />
+=======
+          <img src={profile}   className='rounded-[50%]' alt="Ajith Balan profile picture" />
+>>>>>>> d67ff1184ae80eab0d6016fa5ada0337efe938ad
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
@@ -58,7 +66,7 @@ function App() {
          
           </div>
           <div id="socials-container">
-          <img src="./assets/instagram.webp" alt="My Github profile" className=" transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-200 bg-radius-50  icon" onClick={() => window.location.href = 'https://www.instagram.com/ajith____b?igsh=d2lwZHg1Y2hqeHl4'} />
+          <img src={instagram} alt="My Github profile" className=" transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-200 bg-radius-50  icon" onClick={() => window.location.href = 'https://www.instagram.com/ajith____b?igsh=d2lwZHg1Y2hqeHl4'} />
 
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="My Github profile" className="transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-200 bg-radius-50  icon" onClick={() => window.location.href = 'https://wa.me/8129718562?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services'  } />
             <img src="https://logowik.com/content/uploads/images/github-colored9940.logowik.com.webp" alt="My Github profile"  className="transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-200 bg-radius-50  icon" onClick={() =>   window.location.href = 'https://github.com/Ajith-Balan'} />
