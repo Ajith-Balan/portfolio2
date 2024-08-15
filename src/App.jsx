@@ -1,10 +1,26 @@
 import React from 'react';
 import './App.css';
 import './mediaqueries.css';
+import profile from '../assets/profilepic.jpg'
 import instagram from '../assets/instagram.webp'
-
-
-
+import javascript from '../assets/icons/javascript.svg'
+import html from '../assets/icons/html-5.svg'
+import css from '../assets/icons/css3.svg'
+import tailwind from '../assets/icons/tailwind.png'
+import bootstrap from '../assets/icons/bootstrap.png'
+import react from '../assets/icons/React_Logo_SVG.svg.png'
+import express from '../assets/icons/express.png'
+import aws from '../assets/icons/aws.png'
+import git from '../assets/icons/git.svg'
+import mongodb from '../assets/icons/mongodb.png'
+import macos from '../assets/icons/macos-logo1.jpg'
+import linux from '../assets/icons/linux.png'
+import windows from '../assets/icons/windows-10.svg'
+import portfolio from '../assets/portfolioaji.PNG'
+import phone from '../assets/phone.png'
+import email from '../assets/email.png'
+import location from '../assets/location.png'
+import github from '../assets/github.png'
 function App() {
   const toggleMenu = () => {
     const menuLinks = document.querySelector('.menu-links');
@@ -48,11 +64,7 @@ function App() {
 
       <section id="profile">
         <div className="section__pic-container float">
-
-          <img src={"../assets/profilepic.jpg" }  className='rounded-[50%]' alt="Ajith Balan profile picture" />
-
-         
-
+          <img src={profile }  className='rounded-[50%]' alt="Ajith Balan profile picture" />
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
@@ -161,11 +173,11 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
           <h4 className="font-semibold pb-3 animate-fade-in">Languages</h4>
           <div className="grid  grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
             <div className="skill-item  animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/javascript.svg" alt="JavaScript" className="mx-auto" />
+              <img src={javascript} alt="JavaScript" className="mx-auto" />
               <p className="skill">JavaScript</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/html-5.svg" alt="HTML" className="mx-auto" />
+              <img src={html} alt="HTML" className="mx-auto" />
               <p className="skill">HTML</p>
             </div>
           </div>
@@ -175,35 +187,35 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
           <h4 className="font-semibold pb-3 pt-4 animate-fade-in">Frameworks & Tools</h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/css3.svg" alt="CSS" className="mx-auto" />
+              <img src={css} alt="CSS" className="mx-auto" />
               <p className="skill">CSS</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/tailwind.png" alt="Tailwind CSS" className="mx-auto w-1/3" />
+              <img src={tailwind} alt="Tailwind CSS" className="mx-auto w-1/3" />
               <p className="skill">Tailwind CSS</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="/assets/icons/bootstrap.png" alt="Bootstrap" className="mx-auto" />
+              <img src={bootstrap} alt="Bootstrap" className="mx-auto" />
               <p className="skill">Bootstrap</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/React_Logo_SVG.svg.png" alt="React" className="mx-auto mt-[-6px]" />
+              <img src={react} alt="React" className="mx-auto mt-[-6px]" />
               <p className="skill">React</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="/assets/icons/express.png" alt="React" className="mx-auto mt-[-6px]" />
+              <img src={express} alt="React" className="mx-auto mt-[-6px]" />
               <p className="skill">Express</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/aws.png" alt="AWS" className="mx-auto w-1/3" />
+              <img src={aws} alt="AWS" className="mx-auto w-1/3" />
               <p className="skill">AWS</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/git.svg" alt="Git" className="mx-auto" />
+              <img src="https://logowik.com/content/uploads/images/github-colored9940.logowik.com.webp" alt="Git" className="mx-auto" />
               <p className="skill">Git</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/mongodb.png" alt="MongoDB" className="mx-auto w-1/3" />
+              <img src={mongodb} alt="MongoDB" className="mx-auto w-1/3" />
               <p className="skill">MongoDB</p>
             </div>
           </div>
@@ -213,15 +225,15 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
           <h4 className="font-semibold pb-3 pt-4 animate-fade-in">Operating Systems</h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/macos-logo1.jpg" alt="MacOS" className="mx-auto" />
+              <img src={macos} alt="MacOS" className="mx-auto" />
               <p className="skill">MacOS</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/linux.png" alt="Linux" className="mx-auto" />
+              <img src={linux} alt="Linux" className="mx-auto" />
               <p className="skill">Linux</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="assets/icons/windows-10.svg" alt="Windows" className="mx-auto" />
+              <img src={windows} alt="Windows" className="mx-auto" />
               <p className="skill">Windows</p>
             </div>
           </div>
@@ -335,7 +347,7 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
       <div className="max-w-sm ">
         <a href="https://ajith-balan.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
           <img
-            src="./assets/portfolioaji.PNG"
+            src={portfolio}
             alt="Project 2"
             className="w-full rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300"
             />  
@@ -373,7 +385,7 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
 
               </div>
               <div className="flex text-start">
-                <img src="./assets/phone.png" alt="Phone icon" className="w-6 h-6 mr-4" />
+                <img src={phone} alt="Phone icon" className="w-6 h-6 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium">Phone</h3>
                   <p className="text-gray-600">8129718562</p>
@@ -381,7 +393,7 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
               </div>
 
               <div className="flex text-start">
-                <img src="./assets/email.png" alt="Email icon" className="w-6 h-6 mr-4" />
+                <img src={email} alt="Email icon" className="w-6 h-6 mr-4" />
                 <div>
                   <h3 className="text-lg mr-20 font-medium">Email</h3>
                   <p className="text-gray-600">ajithaji9404@gmail.com</p>
@@ -389,7 +401,7 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
               </div>
 
               <div className="flex text-start">
-                <img src="./assets/location.png" alt="Location icon" className="color-black w-6 h-6 mr-4" />
+                <img src={location} alt="Location icon" className="color-black w-6 h-6 mr-4" />
                 <div>
                   <h3 className="text-lg font-medium">Location</h3>
                   <p className="text-gray-600">Palakkad, Kerala, India </p>
@@ -435,13 +447,13 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
     <br />
     <div className="flex justify-center space-x-6">
       <a href="https://github.com/Ajith-Balan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <img src="/assets/github.png" alt="GitHub" className="h-8 w-8 text-gray-400 hover:text-gray-300 transition-colors duration-300 hover:scale-105" />
+        <img src={github} alt="GitHub" className="h-8 w-8 text-gray-400 hover:text-gray-300 transition-colors duration-300 hover:scale-105" />
       </a>
       <a href="mailto:ajithaji9404@gmail.com" target="_blank" aria-label="Email">
-        <img src="/assets/email.png" alt="Email" className="h-8 w-8 text-blue-400 hover:text-blue-300 transition-colors duration-300 hover:scale-105" />
+        <img src={email} alt="Email" className="h-8 w-8 text-blue-400 hover:text-blue-300 transition-colors duration-300 hover:scale-105" />
       </a>
       <a href="tel:8129718562" aria-label="Phone">
-        <img src="/assets/phone.png" alt="Phone" className="h-8 w-8 text-red-500 hover:text-red-300 transition-colors duration-300 hover:scale-105" />
+        <img src={phone} alt="Phone" className="h-8 w-8 text-red-500 hover:text-red-300 transition-colors duration-300 hover:scale-105" />
       </a>
     </div>
     <br />
