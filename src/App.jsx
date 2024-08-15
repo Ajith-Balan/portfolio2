@@ -27,7 +27,7 @@ function App() {
     menuLinks.classList.toggle('hidden');
   };
  async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5458368661860067"
-     crossorigin="anonymous
+     crossorigin="anonymous"
        (adsbygoogle = window.adsbygoogle || []).push({});
   return (
     <div>
