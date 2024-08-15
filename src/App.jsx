@@ -26,9 +26,7 @@ function App() {
     const menuLinks = document.querySelector('.menu-links');
     menuLinks.classList.toggle('hidden');
   };
- async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5458368661860067"
-     crossorigin="anonymous"
-       (adsbygoogle = window.adsbygoogle || []).push({});
+ 
   return (
     <div>
       <nav id="desktop-nav">
@@ -187,12 +185,7 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
 
         <div>
           
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-5458368661860067"
-     data-ad-slot="3741666087">
-</ins>
+
           <h4 className="font-semibold pb-3 pt-4 animate-fade-in">Frameworks & Tools</h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
