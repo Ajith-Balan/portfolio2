@@ -163,17 +163,7 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
     </div>
 
       </section>
-      { async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5458368661860067"
-     crossorigin="anonymous"}
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-gl+8-k-t+3t"
-     data-ad-client="ca-pub-5458368661860067"
-     data-ad-slot="4669365257"></ins>
-      {
-     (adsbygoogle = window.adsbygoogle || []).push({});
-  }
+
       <section id="experience">
       <div className="container   gap-5 mx-auto" data-aos="fade-up">
         <div className="section-title  text-center my-4">
