@@ -16,7 +16,7 @@ import mongodb from '../assets/icons/mongodb.png'
 import macos from '../assets/icons/macos-logo1.jpg'
 import linux from '../assets/icons/linux.png'
 import windows from '../assets/icons/windows-10.svg'
-import portfolio from '../assets/portfolioaji.PNG'
+import portfolio from '../assets/portfolioaji.png'
 import phone from '../assets/phone.png'
 import email from '../assets/email.png'
 import location from '../assets/location.png'
@@ -211,7 +211,7 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
               <p className="skill">AWS</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
-              <img src="https://logowik.com/content/uploads/images/github-colored9940.logowik.com.webp" alt="Git" className="mx-auto" />
+              <img src={git} alt="Git" className="mx-auto" />
               <p className="skill">Git</p>
             </div>
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
