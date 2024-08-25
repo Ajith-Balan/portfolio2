@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './mediaqueries.css';
 import profile from '../assets/profilepic.jpg'
@@ -22,41 +22,71 @@ import email from '../assets/email.png'
 import location from '../assets/location.png'
 import github from '../assets/github.png'
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const toggleMenu = () => {
-    const menuLinks = document.querySelector('.menu-links');
-    menuLinks.classList.toggle('hidden');
+    setMenuOpen(!menuOpen);
   };
- 
+    
+
+
   return (
+
+
+
+
+
+
+
+
+
     <div>
-      <nav id="desktop-nav">
+
+
+
+
+
+<nav id="desktop-nav">
         <div className="logo">Ajith Balan</div>
         <div>
           <ul className="nav-links">
-          <li><a href="#about" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">About</a></li>
-<li><a href="#experience" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">Skills</a></li>
-<li><a href="#projects" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">Projects</a></li>
-<li><a href="#contact" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">Contact</a></li>
-
+            <li><a href="#about" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">About</a></li>
+            <li><a href="#experience" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">Skills</a></li>
+            <li><a href="#projects" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">Projects</a></li>
+            <li><a href="#contact" className="transition-colors duration-300 hover:text-blue-500 hover:bg-gray-100 px-2 py-1 rounded">Contact</a></li>
           </ul>
         </div>
       </nav>
       <nav id="hamburger-nav">
         <div className="logo">Ajith Balan</div>
         <div className="hamburger-menu">
-          <div className="hamburger-icon" onClick={toggleMenu}>
+          <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div className="menu-links hidden">
-            <li><a href="#about" onClick={toggleMenu}>About</a></li>
+          <div className={`menu-links ${menuOpen ? 'open' : 'hidden'}  bg-white bg-opacity-50 rounded` }>
+            <li ><a href="#about" onClick={toggleMenu}>About</a></li>
             <li><a href="#experience" onClick={toggleMenu}>Skills</a></li>
             <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
           </div>
         </div>
       </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -163,7 +193,6 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
     </div>
 
       </section>
-
       <section id="experience">
       <div className="container   gap-5 mx-auto" data-aos="fade-up">
         <div className="section-title  text-center my-4">
@@ -185,8 +214,6 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
         </div>
 
         <div>
-          
-
           <h4 className="font-semibold pb-3 pt-4 animate-fade-in">Frameworks & Tools</h4>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
             <div className="skill-item animate-fade-in transition-transform duration-300 ease-in-out transform hover:scale-110">
@@ -469,5 +496,6 @@ Hello! I'm a dedicated full-stack web developer with a passion for technology an
     </div>
   );
 }
+
 
 export default App;
